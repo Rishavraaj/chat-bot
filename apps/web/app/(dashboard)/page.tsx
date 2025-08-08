@@ -12,7 +12,7 @@ export default function Page() {
       <div className="flex items-center justify-center min-h-svh">
         <div className="flex flex-col items-center justify-center gap-4">
           <UserButton />
-          <OrganizationSwitcher />
+          <OrganizationSwitcher hidePersonal={true} />
           <h1 className="text-2xl font-bold">Hello World</h1>
           <Button size="sm">Button</Button>
           <pre>{JSON.stringify(users, null, 2)}</pre>
