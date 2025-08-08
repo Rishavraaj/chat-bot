@@ -21,6 +21,8 @@ export const addUser = mutation({
       throw new Error("No organization found");
     }
 
+    throw new Error("Not implemented");
+
     return await ctx.db.insert("users", {
       name: "John Doe",
     });
