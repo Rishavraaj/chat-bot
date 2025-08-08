@@ -1,6 +1,6 @@
 import { Button } from "@workspace/ui/components/button";
 import { useQuery } from "convex/react";
-import { api } from "@workspace/backend/convex/_generated/api";
+import { api } from "@workspace/backend/_generated/api";
 
 export default function Page() {
   const users = useQuery(api.users.getUsers);
